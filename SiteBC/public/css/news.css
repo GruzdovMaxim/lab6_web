@@ -1,0 +1,166 @@
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+.categories{
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.menu-cat{
+	margin-top: 15px;
+	width: 60%;
+}
+.menu-cat ul{
+	font-family: 'Poppins';
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.menu ul li{
+	justify-content: space-between;
+	display: inline-block;
+}
+.menu-cat ul li a{
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.nw-title{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: 100%;
+	 height: 300px;
+	 background: url("../images/background/news.jpg") center +35% / cover no-repeat;
+}
+.nw-title h1{
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 70px;
+	color: #FFFFF4;
+}
+.nw-bd{
+	width: 100%;
+	padding: 60px 90px 60px 90px;
+		
+}
+.nw-posts{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+.news-form{
+	background-color: #fff;
+	width: 500px;
+	height: 500px;
+	margin: 10px;
+	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+	display: flex;
+	flex-direction: column;
+}
+.news-form img:hover{
+	transition: 0.2s;
+	transform: translate(0, -2px);
+}
+.news-form img{
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+}
+.nw-txt{
+	padding: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 45%;
+	font-family: 'Poppins';
+	font-style: normal;
+}
+.nw-bd h4{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+}
+.nw-bd h5{
+	
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	
+}
+.nw-txt p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@media (max-width: 1100px){
+
+	.gl-bd{
+	
+		padding: 40px 60px 40px 60px;
+	}
+	
+	
+}
+@media (max-width: 900px){
+	
+	.nw-bd{
+	
+		padding: 30px 40px 30px 40px;
+	}
+
+}
+
+
+@media (max-width: 500px){
+
+	.nw-bd{
+		padding: 10px 20px 10px 20px;
+	}
+
+	.news-form{
+	width: 300px;
+		}
+	.nw-title{
+	 height: 200px;
+	}
+	.nw-title h1{
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.nw-bd h4{
+
+		font-size: 17px;
+		line-height: 26px;
+	}
+	.nw-bd h5{
+		
+
+		font-size: 15px;
+
+		
+	}
+	.nw-txt p{
+
+		font-size: 12px;
+
+	}
+	.menu-cat ul li a{
+		font-size: 14px;
+	
+	}
+	.menu-cat{
+		margin-top: 10px;
+		width: 90%;
+	}
+}
